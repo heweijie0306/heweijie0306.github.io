@@ -1,0 +1,71 @@
+/* 01_classic_minimal.css - 经典极简黑白风 */
+/* HRBP视角：最安全、最高效的选择，完美的信噪比，ATS（简历解析系统）抓取零障碍。适合传统大厂、金融外企。 */
+
+body {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+  color: #333333;
+  line-height: 1.6;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 40px 0;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+/* 联系方式段落 */
+h1 + p {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 8px 0 15px 0;
+}
+
+li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+strong {
+  font-weight: 600;
+  color: #000000;
+}

@@ -1,0 +1,75 @@
+/* 06_academic_latex.css - 学术严谨 LaTeX 仿真风 */
+/* HRBP视角：投递AI大模型算法、风控算法、量化研究员的神器。一看就是发过顶会paper的人，专业壁垒极高。密集的文字但严格的两端对齐，展现科学家的克制。 */
+
+body {
+  font-family: "Computer Modern Serif", "Times New Roman", Times, serif; /* 经典的Paper字体 */
+  background: #ffffff;
+  color: #000000;
+  line-height: 1.45; /* 稍紧凑的行高 */
+  padding: 30px 0;
+}
+
+.resume-container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 20px 50px;
+  text-align: justify; /* 两端对齐，论文常见排版 */
+}
+
+h1 {
+  font-size: 26px; /* 姓名不大，重点在内容 */
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+h1 + p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 18px;
+  font-variant: small-caps; /* 小型大写字母，非常LaTeX */
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-style: italic; /* 机构名或职位使用斜体区分 */
+}
+
+p {
+  font-size: 14px;
+  margin: 6px 0;
+  text-indent: 28px; /* 首行缩进 */
+}
+
+/* 覆盖联系方式段落和特定段落的缩进 */
+h1 + p, ul p {
+  text-indent: 0;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 8px 0;
+}
+
+li {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+strong {
+  font-weight: bold;
+  /* 学术风不建议用颜色高亮，全靠加粗 */
+}

@@ -1,0 +1,72 @@
+/* 02_tech_modern_blue.css - 科技蓝调现代风 */
+/* HRBP视角：互联网大厂产研线最爱的风格。蓝色(#1e80ff)传达理性与专业感，适合投递字节跳动、腾讯等后端架构、算法等岗位。重点在于高亮核心数字与技术栈。 */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #3f4652;
+  line-height: 1.65;
+  background-color: #fcfcfc;
+  padding: 40px 0;
+}
+
+.resume-container {
+  max-width: 820px;
+  background: #ffffff;
+  margin: 0 auto;
+  padding: 50px 60px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 34px;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+h1 + p {
+  color: #8892a0;
+  font-size: 14px;
+  margin-top: 0;
+  border-bottom: 1px dashed #e1e4e8;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #1e80ff; /* 腾讯蓝/掘金蓝 */
+  margin-top: 35px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 4px solid #1e80ff;
+  font-weight: 600;
+  border-bottom: 1px solid #eef1f6;
+  padding-bottom: 8px;
+}
+
+h3 {
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+p, li {
+  font-size: 14px;
+  color: #515a6e;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+strong {
+  color: #1e80ff; /* 科技风强调用主色调 */
+  font-weight: 600;
+}

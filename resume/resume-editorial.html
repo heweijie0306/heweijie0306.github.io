@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>何伟杰 - AI Agent 应用研发工程师 - 简历</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-text-main: #18181b;
+      --color-text-sub: #71717a;
+      --color-theme: #7c3aed;
+      --color-theme-light: #ede9fe;
+      --color-border: #e4e4e7;
+      --color-bg-page: #ffffff;
+      --font-heading: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+      --font-body: 'Inter', -apple-system, 'PingFang SC', 'Noto Sans SC', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #f4f4f5;
+      color: var(--color-text-main);
+      font-family: var(--font-body);
+      font-size: 9.5px;
+      line-height: 1.35;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      background: var(--color-bg-page);
+      width: 210mm;
+      min-height: 297mm;
+      margin: 20px auto;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      padding: 10mm 14mm 10mm 18mm;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    b, strong { font-weight: 600; }
+    strong.highlight { color: var(--color-theme); }
+    strong.data { font-weight: 700; color: #000; }
+
+    /* ===== Header ===== */
+    header { margin-bottom: 8px; }
+
+    .name {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 3px;
+    }
+
+    .name-decorator {
+      width: 36px;
+      height: 2.5px;
+      background-color: var(--color-theme);
+      margin-bottom: 8px;
+    }
+
+    .job-title {
+      font-size: 10.5px;
+      font-weight: 500;
+      color: var(--color-theme);
+      margin-bottom: 3px;
+    }
+
+    .contact-info {
+      font-size: 9.5px;
+      color: var(--color-text-sub);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .contact-info span.separator { color: var(--color-border); }
+
+    /* ===== Summary (Pull Quote) ===== */
+    .summary-section {
+      margin-bottom: 8px;
+      border-left: 2.5px solid var(--color-theme);
+      padding-left: 12px;
+      font-size: 9.5px;
+      font-style: italic;
+      color: #3f3f46;
+      line-height: 1.35;
+    }
+
+    /* ===== Section Titles ===== */
+    .section-title-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 6px;
+      margin-top: 10px;
+    }
+
+    .section-title {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: var(--color-theme);
+      white-space: nowrap;
+    }
+
+    .section-title-zh {
+      font-size: 8.5px;
+      font-weight: 400;
+      color: var(--color-text-sub);
+      margin-left: 6px;
+      letter-spacing: 1px;
+    }
+
+    .section-title-line {
+      flex-grow: 1;
+      height: 1px;
+      background-color: var(--color-border);
+      margin-left: 12px;
+    }
+
+    /* ===== Timeline ===== */
+    .timeline { display: block; }
+
+    .timeline-item {
+      display: flex;
+      position: relative;
+      margin-bottom: 10px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .timeline-item:last-child { margin-bottom: 0; }
+
+    .timeline-time {
+      width: 80px;
+      flex-shrink: 0;
+      text-align: right;
+      padding-right: 12px;
+      font-size: 9px;
+      color: var(--color-text-sub);
+      padding-top: 2px;
+    }
+
+    .timeline-content {
+      flex-grow: 1;
+      padding-left: 14px;
+      border-left: 1px solid var(--color-border);
+      position: relative;
+    }
+
+    .timeline-content::before {
+      content: '';
+      position: absolute;
+      left: -3.5px;
+      top: 6px;
+      width: 6px;
+      height: 6px;
+      background-color: var(--color-theme);
+      border-radius: 50%;
+    }
+
+    .item-header { margin-bottom: 3px; }
+
+    .item-title {
+      font-family: var(--font-heading);
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .item-subtitle {
+      font-size: 9.5px;
+      color: var(--color-text-sub);
+      margin-left: 6px;
+      font-weight: 400;
+      font-family: var(--font-body);
+    }
+
+    .item-context {
+      font-size: 9.5px;
+      color: var(--color-text-sub);
+      margin-bottom: 3px;
+      line-height: 1.4;
+    }
+
+    /* ===== Bullet Points ===== */
+    .bullet-list { list-style: none; }
+
+    .bullet-list li {
+      position: relative;
+      padding-left: 12px;
+      font-size: 9.5px;
+      margin-bottom: 1px;
+      line-height: 1.35;
+    }
+
+    .bullet-list li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--color-theme);
+      font-weight: 600;
+      font-size: 9px;
+    }
+
+    /* ===== Skills ===== */
+    .skills-grid { display: block; }
+
+    .skill-row {
+      display: flex;
+      font-size: 9.5px;
+      margin-bottom: 2px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+      line-height: 1.45;
+    }
+    .skill-row:last-child { margin-bottom: 0; }
+
+    .skill-category {
+      width: 80px;
+      flex-shrink: 0;
+      text-align: right;
+      padding-right: 12px;
+      font-weight: 600;
+    }
+
+    .skill-items {
+      flex-grow: 1;
+      padding-left: 14px;
+      border-left: 1px solid var(--color-border);
+    }
+
+    .skill-tag {
+      font-weight: 600;
+      border-bottom: 2px solid var(--color-theme-light);
+      padding-bottom: 0px;
+    }
+
+    .skill-tag:hover { border-color: var(--color-theme); }
+
+    /* ===== Print ===== */
+    @media print {
+      @page {
+        size: A4;
+        margin: 0;
+      }
+      body {
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        width: 100%;
+        min-height: auto;
+        padding: 10mm 14mm 10mm 18mm;
+      }
+      .name-decorator, .timeline-content::before {
+        background-color: var(--color-theme) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .skill-tag {
+        border-bottom: 2px solid var(--color-theme-light) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      a { text-decoration: none; color: var(--color-text-main); }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <header>
+      <div class="name">何伟杰</div>
+      <div class="name-decorator"></div>
+      <div class="job-title">AI Agent 应用研发工程师</div>
+      <div class="contact-info">
+        <span>+86 13544248446</span>
+        <span class="separator">|</span>
+        <a href="mailto:heweijie0306@gmail.com">heweijie0306@gmail.com</a>
+        <span class="separator">|</span>
+        <a href="https://github.com/heweijie0306" target="_blank">github.com/heweijie0306</a>
+        <span class="separator">|</span>
+        <span>深圳</span>
+      </div>
+    </header>
+
+    <div class="summary-section">
+      具备 <strong>AI Agent 全栈工程落地</strong>与<strong>AI原生产品架构</strong>设计能力的研发工程师。就职于AI设计SaaS创业公司（A-B轮），作为核心骨干直接向CEO汇报。具备<strong>生产级 Agent 框架设计与落地</strong>经验。曾独立发掘业务痛点，主导与参与多项架构级创新，驱动产品注册付费转化率增长超 <strong class="data">150%</strong>。
+    </div>
+
+    <div class="section-title-wrapper" style="margin-top: 0;">
+      <span class="section-title">SKILLS</span>
+      <span class="section-title-zh">专业技能</span>
+      <div class="section-title-line"></div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-row">
+        <div class="skill-category">Agent Infra</div>
+        <div class="skill-items">
+          <span class="skill-tag">Context Engineering</span>、<span class="skill-tag">ReAct Loop</span>、<span class="skill-tag">Tool Calling</span>、<span class="skill-tag">MCP 协议</span>、<span class="skill-tag">RAG pipeline</span>、Agent Sandbox、Skills
+        </div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-category">大模型</div>
+        <div class="skill-items">
+          <span class="skill-tag">Prompt Engineering</span>、<span class="skill-tag">Transformer 架构</span>、模型选型与评估、<span class="skill-tag">LangChain</span> / <span class="skill-tag">LangGraph</span>、<span class="skill-tag">OpenAI</span>/<span class="skill-tag">Claude</span> SDK
+        </div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-category">工程技术栈</div>
+        <div class="skill-items">
+          <span class="skill-tag">TypeScript</span> / <span class="skill-tag">Python</span>、<span class="skill-tag">React</span> / <span class="skill-tag">Node.js</span> / <span class="skill-tag">FastAPI</span>、HTML/CSS、向量数据库
+        </div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-category">综合素质</div>
+        <div class="skill-items">
+          从0到1 MVP 快速验证、全英工作环境沟通能力（美国硕士）
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title-wrapper">
+      <span class="section-title">EXPERIENCE</span>
+      <span class="section-title-zh">工作经历</span>
+      <div class="section-title-line"></div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">2024.09 - 至今</div>
+        <div class="timeline-content">
+          <div class="item-header">
+            <span class="item-title">深圳灵图创新科技 (Pageon)</span>
+            <span class="item-subtitle">AI Agent 算法/应用工程师</span>
+          </div>
+          <div class="item-context">A-B轮 AI 设计 SaaS 公司，直接汇报给 CEO，带领并指导2名研发实习生。</div>
+          <ul class="bullet-list">
+            <li>早期负责基于 <strong>Python/FastAPI</strong> 的 AI 生成服务后端研发；后续在 <strong>TypeScript 全栈</strong>架构下，主要负责核心 AI PPT 生成平台的 <strong>Agent System</strong>（自研到 <strong class="highlight">Claude Code / OpenClaw</strong> 体系）与底层数据架构的研发与演进，主导和参与的架构重构推动注册付费转化率从 <strong class="data">~2% 跃升至 5%+</strong>。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title-wrapper">
+      <span class="section-title">PROJECTS</span>
+      <span class="section-title-zh">项目经历</span>
+      <div class="section-title-line"></div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">2025.11 - 2026.01</div>
+        <div class="timeline-content">
+          <div class="item-header">
+            <span class="item-title">Pageon PPT · 数据结构架构重构</span>
+            <span class="item-subtitle">核心发起人 &amp; 方案 Owner</span>
+          </div>
+          <div class="item-context">针对旧版 XML + React 方案视觉效果受限的问题，主动发起底层数据结构重构。</div>
+          <ul class="bullet-list">
+            <li><strong>重构数据结构</strong>：独立发现并提出 <strong class="highlight">HTML直出 + 前端后处理</strong> 方案——通过 <strong>Context Engineering</strong> 引导大模型直接输出原生 HTML/CSS 以替代 XML 渲染方案，同时基于 <strong class="highlight">DOM Parser</strong> + <strong>tiptap</strong> 实现富文本编辑与拖拽，兼顾视觉效果与编辑能力。</li>
+            <li><strong>推动生产落地</strong>：独立完成架构验证 Demo 并向团队演示，方案获团队采纳并确立为产品未来技术路线。上线后转化率稳定在 <strong class="data">5%+</strong>，视觉效果与 Agent 能力超越竞品 Gamma。同时拓宽产品能力边界，成功支持 Poster、Infographic、Social Media 等多尺寸平面设计场景。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time">2026.01 - 至今</div>
+        <div class="timeline-content">
+          <div class="item-header">
+            <span class="item-title">Pageon MG视频 · 动画视频生成 Agent</span>
+            <span class="item-subtitle">核心研发</span>
+          </div>
+          <div class="item-context">为产品新增 AI 动画视频生成能力，基于 <strong>OpenClaw（PiAgent）</strong> + Vercel <strong>just-bash</strong> 搭建完全 Serverless 的 Web 端 Agent 运行时。</div>
+          <ul class="bullet-list">
+            <li><strong>构建 Serverless Agent 运行时</strong>：基于 <strong class="highlight">just-bash</strong> 搭建 Web 端代码沙箱，使 Agent 可执行 write/bash/grep 等操作，零容器、零 WASM；基于 <strong class="highlight">Babel</strong> 实现 TSX 动态编译，通过 <code>new Function()</code> 注入 50+ Remotion API，代码生成即可预览。</li>
+            <li><strong>设计多场景编排与云端导出</strong>：实现 AI 自动拆分多场景文件、按序轮播预览与分段进度条跳转；集成 <strong class="highlight">AWS Lambda</strong> 无服务器渲染管线，支持单/多场景 MP4 导出。（内测阶段）</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time">2025.07 - 至今</div>
+        <div class="timeline-content">
+          <div class="item-header">
+            <span class="item-title">Pageon PPT · Page Agent Infra</span>
+            <span class="item-subtitle">核心研发</span>
+          </div>
+          <div class="item-context">从零搭建 PPT Agent 基础设施，经历从自研到 <strong>Claude Code Agent SDK</strong> 的完整演进。</div>
+          <ul class="bullet-list">
+            <li><strong>搭建 Agent 核心工具链</strong>：自研 <strong class="highlight">Tool Calling</strong> 与 <strong class="highlight">ReAct Loop</strong> 闭环，实现分页读取、文件编辑等核心 Tool，内置 HITL 中断与自动纠错；针对大模型 diff 不稳定问题，设计 <strong>7 种 Search &amp; Replace 策略</strong>（含 XML 结构匹配），显著降低编辑失败率。</li>
+            <li><strong>推动 Agent 体系演进</strong>：后期推动 Infra 从自研迁移至 <strong class="highlight">Claude Code Agent SDK</strong>，基于其原生 File System、Bash Tool 重构适配层；同步基于 <strong class="highlight">MCP 协议</strong>开发 stdio Server 并支持 HTTP MCP 接入用户云端数据源（GitHub、Notion 等），构建开放工具生态。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title-wrapper">
+      <span class="section-title">EDUCATION</span>
+      <span class="section-title-zh">教育背景</span>
+      <div class="section-title-line"></div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">2022.09 - 2024.05</div>
+        <div class="timeline-content" style="padding-bottom: 14px;">
+          <div class="item-header">
+            <span class="item-title">宾夕法尼亚州立大学 (Penn State)</span>
+            <span class="item-subtitle">电气工程 · 硕士 · GPA 3.7/4.0</span>
+          </div>
+          <div class="item-context" style="margin-bottom: 2px;">State College, PA, USA</div>
+          <ul class="bullet-list">
+            <li><strong>研究方向</strong>：图神经网络 (GNNs/GATs)、深度学习 (PyTorch/TensorFlow)、计算机视觉 (CNN)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time">2018.09 - 2022.06</div>
+        <div class="timeline-content" style="border-left-color: transparent;">
+          <div class="item-header">
+            <span class="item-title">华北理工大学</span>
+            <span class="item-subtitle">电子信息工程 · 本科 · GPA 3.5/4.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

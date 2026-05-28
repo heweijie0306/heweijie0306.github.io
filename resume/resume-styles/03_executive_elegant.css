@@ -1,0 +1,79 @@
+/* 03_executive_elegant.css - 高管商务暗黑灰风 */
+/* HRBP视角：适合Staff级（P8/P9）及总监以上职级、高级HRBP或外企中高层。整体居中式的标题、大字间距和高级衬线字体，营造高级和克制感。不重技术细节，更重战略和业务盘子。 */
+
+body {
+  font-family: "Georgia", "Times New Roman", "FangSong", "STFangsong", serif; /* 采用衬线体增加高级感 */
+  background: #ffffff;
+  color: #2c3e50; /* 商务灰 */
+  line-height: 1.8;
+  padding: 40px 0;
+}
+
+.resume-container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 38px;
+  text-align: center; /* 姓名居中 */
+  letter-spacing: 4px; /* 字间距扩大 */
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+h1 + p {
+  text-align: center; /* 联系方式居中 */
+  font-family: Arial, sans-serif; /* 联系方式保留无衬线，方便阅读 */
+  font-size: 13px;
+  color: #7f8c8d;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dcdde1;
+}
+
+h2 {
+  font-size: 18px;
+  text-align: center; /* 模块大标题居中 */
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #34495e;
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #34495e;
+  margin: 8px auto 0 auto;
+}
+
+h3 {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #2f3640;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+p, li {
+  font-size: 14.5px;
+  color: #4a4a4a;
+  text-align: justify;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}

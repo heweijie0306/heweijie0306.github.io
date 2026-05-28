@@ -1,0 +1,87 @@
+/* 04_timeline_journey.css - 左侧时间轴风 */
+/* HRBP视角：视觉引导极佳，利用侧边的直线将经历串联起来，对于职业晋升稳定、没有频繁跳槽断档的人尤其加分。展现出清晰的职业脉络。 */
+
+body {
+  font-family: "Avenir Next", "Microsoft YaHei", sans-serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+  padding: 40px 0;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 50px;
+  border-top: 6px solid #2d3436; /* 顶部横条压阵 */
+}
+
+h1 {
+  font-size: 36px;
+  color: #2d3436;
+  margin-bottom: 5px;
+}
+
+h1 + p {
+  font-size: 14px;
+  color: #636e72;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #2d3436;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #dfe6e9;
+}
+
+/* 时间轴核心实现 */
+.resume-container > h3 {
+  position: relative;
+  font-size: 16px;
+  color: #111;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+/* 在H3左侧画圈 */
+.resume-container > h3::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #2d3436;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #dfe6e9;
+}
+
+/* 在内容左侧画线 */
+.resume-container > ul {
+  position: relative;
+  padding-left: 30px;
+  margin-left: 4px; /* 对齐圈 */
+  border-left: 2px solid #dfe6e9; /* 时间轴竖线 */
+  padding-bottom: 10px; /* 防止内容粘连 */
+}
+
+p, li {
+  font-size: 14px;
+  color: #555;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+strong {
+  color: #000;
+  font-weight: 600;
+}

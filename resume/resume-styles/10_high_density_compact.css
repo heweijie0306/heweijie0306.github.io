@@ -1,0 +1,83 @@
+/* 10_high_density_compact.css - 高密度一页纸紧凑风 */
+/* HRBP视角：拥有8-10年以上经验的职场老兵必备。经历太多，如果排版不好容易超2页甚至3页，ATS解析常常断裂。这个样式极限压榨行高与边距，字小但层次依然清晰。适合海量面经的大牛。 */
+
+body {
+  font-family: "Arial", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #1a1a1a;
+  line-height: 1.35; /* 极限压缩行高 */
+  background-color: #fff;
+  padding: 10px 0; /* 极限减少外边距 */
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px; /* 页面左右边距缩进极小 */
+}
+
+h1 {
+  font-size: 24px; /* 缩小姓名 */
+  font-weight: bold;
+  margin-bottom: 2px;
+  display: inline-block; /* 和联系方式并排，节省垂直空间 */
+}
+
+/* 利用 CSS 把联系方式直接提上来 */
+h1 + p {
+  display: inline-block;
+  font-size: 12px;
+  color: #555;
+  margin: 0 0 0 15px;
+  border-bottom: none;
+}
+
+/* 如果联系方式太长，可以用一条下划线收尾 */
+h1 + p::after {
+  content: "";
+  display: block;
+  width: 100vw;
+  max-width: 800px;
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  left: 20px;
+  margin-top: 5px;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+  margin-top: 15px; /* 段间距极速压缩 */
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 13.5px;
+  font-weight: bold;
+  color: #222;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+p, li {
+  font-size: 12.5px; /* 12-13px是可读和密度的极限平衡 */
+  color: #333;
+  margin: 3px 0; /* 压缩段落间距 */
+}
+
+ul {
+  padding-left: 18px;
+  margin: 3px 0;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+strong {
+  font-weight: bold;
+  color: #000;
+}

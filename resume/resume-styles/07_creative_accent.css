@@ -1,0 +1,97 @@
+/* 07_creative_accent.css - 创意珊瑚红风 */
+/* HRBP视角：前端(FE)、UI/UX设计、营销策划(MKT)的加分项。适度的跳跃色彩（如#FF6B6B珊瑚红）能打破沉闷，让人觉得候选人有活力、有审美、不僵化。 */
+
+body {
+  font-family: "Quicksand", "Montserrat", "PingFang SC", sans-serif;
+  color: #3b3b3b;
+  line-height: 1.8;
+  background-color: #fff9f9; /* 微微带暖色调的背景 */
+  margin: 0;
+  padding: 40px 0;
+}
+
+.resume-container {
+  max-width: 800px;
+  background: #ffffff;
+  margin: 0 auto;
+  padding: 50px 60px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(255,107,107,0.1); /* 珊瑚色发光边框 */
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #FF6B6B; /* 主题色 */
+  margin-bottom: 5px;
+  letter-spacing: -1px;
+}
+
+h1 + p {
+  font-size: 15px;
+  color: #a4b0be;
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 22px;
+  color: #2f3542;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block; /* 让底边线跟着字宽走 */
+}
+
+/* 创意的下划线波浪或粗线条 */
+h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background-color: #FF6B6B;
+  opacity: 0.3;
+  bottom: 4px;
+  left: 0;
+  z-index: -1; /* 压在文字底下 */
+}
+
+h3 {
+  font-size: 18px;
+  color: #2f3542;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+p, li {
+  font-size: 14.5px;
+  color: #57606f;
+}
+
+ul {
+  padding-left: 20px;
+  list-style-type: none; /* 去掉默认圆点 */
+}
+
+/* 创意自定列表符号 */
+li::before {
+  content: "✦";
+  color: #FF6B6B;
+  font-size: 12px;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1.5em;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+strong {
+  color: #FF4757;
+  font-weight: 700;
+  background: rgba(255, 107, 107, 0.05); /* 文字轻微底色 */
+  padding: 0 4px;
+  border-radius: 4px;
+}

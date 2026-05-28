@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown to HTML Resume Template</title>
+  <!-- 引入你喜欢的 CSS 文件，例如： -->
+  <link rel="stylesheet" href="./02_tech_modern_blue.css">
+</head>
+<body>
+  <!-- 简历容器，所有 Markdown 转换的 HTML 都放在这里 -->
+  <div class="resume-container">
+    
+    <h1>张三 (Zhang San)</h1>
+    <p>138-xxxx-xxxx | zhangsan@email.com | GitHub: @zhangsan | 深圳</p>
+    
+    <p><strong>个人总结：</strong>拥有10年经验的资深大厂后端架构师，深谙高并发与微服务治理。近期专注 RAG 与 Agent 大模型落地，主导过日活千万级产品的底层重构。</p>
+
+    <h2>专业技能</h2>
+    <ul>
+      <li><strong>后端开发</strong>：精通 Golang / Java，熟悉 JVM 调优及微服务架构 (Spring Cloud / Kratos)</li>
+      <li><strong>AI大模型</strong>：熟练运用 LangChain、LlamaIndex，掌握 Prompt Engineering 及 RAG 召回链路优化</li>
+      <li><strong>组件与部署</strong>：Redis, MySQL, Kafka, Docker, Kubernetes</li>
+    </ul>
+
+    <h2>工作经历</h2>
+    <h3><strong>字节跳动</strong> | 资深研发工程师 | 2021.05 - 至今</h3>
+    <ul>
+      <li><strong>业务职责</strong>：主导商业化广告引擎 API 层的核心开发与高可用架构重构。</li>
+      <li><strong>核心产出</strong>：通过重构缓存策略与引入协程池，使核心接口响应延迟 <strong>降低30%</strong>，支撑 QPS 破百万。</li>
+      <li><strong>AI探索</strong>：内部孵化基于大模型的广告文案生成 Agent，提升运营提效约 40%。</li>
+    </ul>
+
+    <h3><strong>腾讯科技</strong> | 高级后端开发 | 2017.07 - 2021.05</h3>
+    <ul>
+      <li><strong>业务职责</strong>：负责某音视频社交产品信令后台及消息系统的研发。</li>
+      <li><strong>核心产出</strong>：设计并实现了基于 WebSocket 的长连接网关，支持百万级同时在线，消息到达率达 99.99%。</li>
+    </ul>
+
+    <h2>项目经历</h2>
+    <h3><strong>大模型企业级智能知识库 (RAG)</strong> | 核心研发 | 2023.10 - 2024.03</h3>
+    <p><strong>项目背景</strong>：针对企业内部沉淀的大量非结构化文档，打造基于大模型的智能问答知识库。</p>
+    <ul>
+      <li><strong>链路优化</strong>：采用 <strong>BGE-m3</strong> 进行向量化，结合 <strong>ElasticSearch</strong> 混合检索（BM25+Dense），使 Top-3 召回率提升至 92%。</li>
+      <li><strong>难点攻坚</strong>：解决长文本截断丢失上下文问题，引入 Parent-Child Chunking 策略，显著提升了回答的逻辑完整性。</li>
+    </ul>
+
+    <h2>教育经历</h2>
+    <h3><strong>华中科技大学</strong> | 计算机科学与技术 (硕士) | 2014.09 - 2017.06</h3>
+
+  </div>
+</body>
+</html>

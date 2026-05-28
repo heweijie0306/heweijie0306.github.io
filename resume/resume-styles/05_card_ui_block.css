@@ -1,0 +1,85 @@
+/* 05_card_ui_block.css - 卡片区块风 */
+/* HRBP视角：非常适合产品经理(PM)或UI/UX设计师。模块与模块之间像网页区块一样隔开，潜移默化地传达候选人的“产品结构化思维”和“网感”。 */
+
+body {
+  font-family: -apple-system, "Inter", "Helvetica Neue", sans-serif;
+  background: #f0f2f5; /* 类似微信/后台的底层灰 */
+  color: #1a1a1a;
+  line-height: 1.7;
+  padding: 30px 0;
+}
+
+.resume-container {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* 将每一个H2和后续内容变成一个卡片。标准MD结构难以完全包裹卡片，这里用背景色区分 */
+h1 {
+  font-size: 36px;
+  background: #fff;
+  margin: 0;
+  padding: 40px 40px 0 40px;
+  border-radius: 12px 12px 0 0;
+}
+
+h1 + p {
+  background: #fff;
+  margin: 0 0 20px 0;
+  padding: 10px 40px 30px 40px;
+  font-size: 14px;
+  color: #666;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+h2 {
+  font-size: 18px;
+  background: #ffffff;
+  padding: 15px 40px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  border-radius: 12px 12px 0 0;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+h2::before {
+  content: "✦ "; /* 加点小装饰 */
+  color: #fa8c16; /* 火山橘 */
+}
+
+/* 给H2后面的内容（H3, P, UL）加上白色背景，模拟卡片容器 */
+h3, p, ul {
+  background: #ffffff;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0;
+}
+
+h3 {
+  padding-top: 25px;
+  font-size: 16px;
+  color: #222;
+}
+
+ul {
+  padding-bottom: 25px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+li {
+  font-size: 14px;
+  color: #595959;
+  margin-bottom: 8px;
+  margin-left: 20px; /* 因为ul padding已经设置，li稍微缩进 */
+}
+
+strong {
+  background: #fffbe6; /* 高亮重点文本，非常PM的做法 */
+  padding: 0 4px;
+  border-radius: 2px;
+  color: #fa8c16;
+  font-weight: 500;
+}

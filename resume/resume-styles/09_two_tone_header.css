@@ -1,0 +1,70 @@
+/* 09_two_tone_header.css - 双色区块分割风 */
+/* HRBP视角：结构最为清晰，强迫症HR的最爱。通过灰底黑字的H2色块，把视线粗暴地拉成几段，不管怎么一目十行，都能准确定位到“教育”、“经验”、“技能”。极度扫描友好。 */
+
+body {
+  font-family: -apple-system, "Helvetica Neue", "Microsoft YaHei", sans-serif;
+  color: #2c3e50;
+  line-height: 1.6;
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.resume-container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 5px;
+}
+
+h1 + p {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #34495e; /* 深蓝色/深灰色区块 */
+  padding: 6px 15px; /* 撑开色块 */
+  border-radius: 4px; /* 稍微圆润一点 */
+  margin-top: 35px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 16px;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border-left: 3px solid #34495e; /* 给机构名加个左侧线 */
+  padding-left: 10px;
+}
+
+p, li {
+  font-size: 14.5px;
+  color: #4a4a4a;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
